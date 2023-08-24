@@ -1,8 +1,6 @@
 #include "monty.h"
 #include <string.h>
 
-char **op_toks = NULL;
-
 /**
  * main - Entry point of the program.
  * @argc: Number of command-line arguments.
@@ -12,6 +10,8 @@ char **op_toks = NULL;
  */
 int main(int argc, char **argv)
 {
+	char **op_toks = NULL;
+
 	FILE *script_fd = NULL;
 	int exit_code = EXIT_SUCCESS;
 
