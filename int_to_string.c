@@ -48,6 +48,7 @@ int get_numbase_len(unsigned int num, unsigned int base)
 {
 	int len = 1;
 	while (num > base - 1)
+
 	{
 		len++;
 		num /= base;
@@ -68,6 +69,7 @@ void fill_numbase_buff(unsigned int num, unsigned int base, char *buff, int buff
 	int rem, i = buff_size - 1;
 	buff[buff_size] = '\0';
 	while (i >= 0)
+
 	{
 		rem = num % base;
 		if (rem > 9)

@@ -34,7 +34,7 @@ int f_open_error(char *filename)
 /**
  * unknown_op_error - handles unknown instructions errors
  * @opcode: code where these instruction errors were flagged
- * @line_number: line in bytecodes where error flagged 
+ * @line_number: line in bytecodes where error flagged
  * Return: Exits
  */
 int unknown_op_error(char *opcode, unsigned int line_number)
