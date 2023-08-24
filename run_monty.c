@@ -3,6 +3,13 @@
 
 char **op_toks = NULL;
 
+/**
+ * main - Entry point of the program.
+ * @argc: Number of command-line arguments.
+ * @argv: Array of command-line argument strings.
+ *
+ * Return: EXIT_SUCCESS if successful, otherwise EXIT_FAILURE.
+ */
 int main(int argc, char **argv)
 {
 	FILE *script_fd = NULL;

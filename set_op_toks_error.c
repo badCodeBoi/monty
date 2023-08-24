@@ -1,5 +1,11 @@
 #include "monty.h"
 
+/**
+ * set_op_tok_error - Sets the error code in op_toks array.
+ * @error_code: The error code to set.
+ *
+ * This function sets the error code at the end of the op_toks array.
+ */
 void set_op_tok_error(int error_code)
 {
 	int toks_len = 0, i = 0;

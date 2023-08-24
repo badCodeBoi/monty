@@ -7,9 +7,11 @@ int get_word_count(char *str, char *delims);
 int get_word_length(char *str, char *delims);
 
 /**
- * strtow- handles invalid push errors
- * @:
- * Return: Exits
+ * strtow - Splits a string into words.
+ * @str: The string to be split.
+ * @delims: Delimiter characters.
+ *
+ * Return: An array of pointers to the extracted words.
  */
 char **strtow(char *str, char *delims)
 {
@@ -55,12 +57,14 @@ char **strtow(char *str, char *delims)
 	words[i] = NULL;
 	return (words);
 }
-/**
- * is_delim - 
- * @line_number: line in monty code where error flagged
- * Return: Exits
- */
 
+/**
+ * is_delim - Checks if a character is a delimiter.
+ * @ch: The character to be checked.
+ * @delims: Delimiter characters.
+ *
+ * Return: 1 if @ch is a delimiter, 0 otherwise.
+ */
 int is_delim(char ch, char *delims)
 {
 	int i = 0;
@@ -75,9 +79,11 @@ int is_delim(char ch, char *delims)
 }
 
 /**
- * get_word_length -
- * 
- * Return: Exits
+ * get_word_length - Computes the length of a word.
+ * @str: The string containing the word.
+ * @delims: Delimiter characters.
+ *
+ * Return: The length of the word.
  */
 int get_word_length(char *str, char *delims)
 {
@@ -101,9 +107,11 @@ int get_word_length(char *str, char *delims)
 }
 
 /**
- * get_word_count -
- * @
- * Return: Exits
+ * get_word_count - Computes the number of words in a string.
+ * @str: The string to be analyzed.
+ * @delims: Delimiter characters.
+ *
+ * Return: The number of words.
  */
 int get_word_count(char *str, char *delims)
 {
@@ -129,9 +137,11 @@ int get_word_count(char *str, char *delims)
 }
 
 /**
- * get_next_word -
- * @
- * Return: Exits
+ * get_next_word - Retrieves the next word in a string.
+ * @str: The string to be analyzed.
+ * @delims: Delimiter characters.
+ *
+ * Return: A pointer to the start of the next word.
  */
 char *get_next_word(char *str, char *delims)
 {
