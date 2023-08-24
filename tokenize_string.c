@@ -17,6 +17,7 @@ char **strtow(char *str, char *delims)
 {
 	char **words = NULL;
 	int wc, wordLen, n, i = 0;
+
 	if (str == NULL || !*str)
 		return (NULL);
 	wc = get_word_count(str, delims);
