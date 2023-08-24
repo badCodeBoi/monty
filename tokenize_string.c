@@ -6,6 +6,11 @@ char *get_next_word(char *str, char *delims);
 int get_word_count(char *str, char *delims);
 int get_word_length(char *str, char *delims);
 
+/**
+ * strtow- handles invalid push errors
+ * @:
+ * Return: Exits
+ */
 char **strtow(char *str, char *delims)
 {
 	char **words = NULL;
@@ -50,6 +55,11 @@ char **strtow(char *str, char *delims)
 	words[i] = NULL;
 	return (words);
 }
+/**
+ * is_delim - 
+ * @line_number: line in monty code where error flagged
+ * Return: Exits
+ */
 
 int is_delim(char ch, char *delims)
 {
@@ -64,6 +74,11 @@ int is_delim(char ch, char *delims)
 	return (0);
 }
 
+/**
+ * get_word_length -
+ * 
+ * Return: Exits
+ */
 int get_word_length(char *str, char *delims)
 {
 	int wLen = 0, pending = 1;
@@ -85,6 +100,11 @@ int get_word_length(char *str, char *delims)
 	return (wLen);
 }
 
+/**
+ * get_word_count -
+ * @
+ * Return: Exits
+ */
 int get_word_count(char *str, char *delims)
 {
 	int wc = 0, pending = 1;
@@ -108,6 +128,11 @@ int get_word_count(char *str, char *delims)
 	return (wc);
 }
 
+/**
+ * get_next_word -
+ * @
+ * Return: Exits
+ */
 char *get_next_word(char *str, char *delims)
 {
 	while (*str)
